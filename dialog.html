@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模态框</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        .modal-backdrop {
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+        
+        .modal {
+            transition: opacity .3s linear !important;
+            width: 500px;
+            height: 529px;
+        }
+        
+        .modal .modal-dialog {
+            margin: 0;
+        }
+        
+        .modal .modal-header {
+            cursor: move;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" id="loginBtn">
+    百度登入
+  </button>
+    <!-- Modal -->
+    <div class=" modal" id="loginModal" style="opacity: 0;">
+        <div class="modal-dialog">
+
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title ">百度登入框</h5>
+                    <button type="button " id="loginCloseBtn" class="close"> 
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body ">
+                    夫君子之行⑵，静以修身⑶，俭以养德⑷。非淡泊无以明志⑸，非宁静无以致远⑹。夫学须静也，才须学也，非学无以广才⑺，非志无以成学⑻。淫慢则不能励精⑼，险躁则不能治性⑽。年与时驰⑾，意与日去⑿，遂成枯落⒀，多不接世⒁，悲守穷庐⒂，将复何及⒃！
+                </div>
+
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-primary ">提交</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-backdrop" id="loginModalBack" style="display:none;"></div>
+    <!-- 先引入jQuery再引入bootstrap -->
+    <script src="./js/jquery.min.js "></script>
+    <script src="./js/bootstrap.min.js "></script>
+    <script src="./js/dialog.js"></script>
+</body>
+
+</html>
